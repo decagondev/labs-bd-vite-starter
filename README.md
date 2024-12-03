@@ -1,6 +1,4 @@
-Here's the updated README with the new folder structure including the components folder:
-
-# 🚀 Vite + React + TypeScript Labs Starter
+# 🚀 Vite + React + TypeScript BD Labs Starter
 
 ## 📋 Overview
 
