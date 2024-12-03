@@ -5,7 +5,7 @@
 This is a GitHub Template Repository for quickly starting new React + TypeScript projects using Vite. You can generate a new repository with the same directory structure and files in just a few clicks.
 
 ## Creation Video
-Here is the [Video](https://bloomtech-1.wistia.com/medias/g5javs2omr) of creating this starter
+### Watch this [Video](https://bloomtech-1.wistia.com/medias/g5javs2omr) of creating this starter
 
 ## 🚀 Using This Template
 
