@@ -56,13 +56,29 @@ project-root/
 ├── public/              # Static assets
 │   └── vite.svg         # Default Vite logo
 ├── src/                 # Source code
+│   ├── assets/          # Assets (images, fonts, etc.)
+│   │   └── logo.svg
 │   ├── components/      # React components
-│   │   └── StarterCard.tsx
-│   ├── main.tsx         # React application entry point
-│   └── App.tsx          # Main application component
+│   │   ├── Approach.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HeroBanner.tsx
+│   │   ├── NavBar.tsx
+│   │   ├── Pricing.tsx
+│   │   ├── PricingCard.tsx
+│   │   ├── RandomImage.tsx
+│   │   └── Team.tsx
+│   ├── App.css          # Application styles
+│   ├── App.tsx          # Main application component
+│   ├── index.css        # Global styles
+│   └── main.tsx         # React application entry point
+├── .gitignore           # Git ignore file
 ├── index.html           # HTML entry point
-├── vite.config.ts       # Vite configuration
-└── README.md            # Project documentation
+├── package-lock.json    # Automatically generated dependency lock file
+├── package.json         # Project dependencies and metadata
+├── postcss.config.js    # PostCSS configuration
+├── README.md            # Project documentation
+├── tailwind.config.js   # Tailwind CSS configuration
+└── vite.config.ts       # Vite configuration
 ```
 
 The `components` folder contains the `StarterCard` component, which you can use as a starting point for your UI development.
