@@ -1,14 +1,21 @@
 import './App.css'
-import StarterCard from './components/StarterCard'
+import Approach from './components/Approach'
+import Footer from './components/Footer'
+import HeroBanner from './components/HeroBanner'
+import NavBar from './components/NavBar'
+import Pricing from './components/Pricing'
+import Team from './components/Team'
 
 function App() {
 
   return (
-    <div className="flex mx-auto align-center justify-center gap-4 m-6">
-      <StarterCard />
-      <StarterCard />
-      <StarterCard />
-      <StarterCard />
+    <div>
+      <NavBar />
+      <HeroBanner />
+      <Approach />
+      <Team />
+      <Pricing />
+      <Footer />
     </div>
   )
 }

@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 body {
-  background-color:rgb(212, 255, 242);
+  background-color: #fff4ec;
+}
+
+.hero {
+  background-image: url('./assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
