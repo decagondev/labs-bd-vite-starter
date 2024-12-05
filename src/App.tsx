@@ -1,20 +1,22 @@
 import './App.css'
-import Approach from './components/Approach'
-import Footer from './components/Footer'
-import HeroBanner from './components/HeroBanner'
-import NavBar from './components/NavBar'
-import Pricing from './components/Pricing'
-import Team from './components/Team'
+import { Routes, Route, Outlet } from "react-router-dom";
+import NavBar from './components/NavBar';
+import ChatBot from './components/pages/ChatBot';
+import LandingPage from './components/pages/LandingPage';
+import Footer from './components/Footer';
+
 
 function App() {
 
   return (
     <div>
       <NavBar />
-      <HeroBanner />
-      <Approach />
-      <Team />
-      <Pricing />
+      <Routes>
+        <Route path='' element={<Outlet />}>
+          <Route index element={<LandingPage />} />
+          <Route path='/chat' element={<ChatBot />} />
+        </Route>
+      </Routes>
       <Footer />
     </div>
   )
