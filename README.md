@@ -50,8 +50,8 @@ project-root/
 │   ├── components/      # React components
 │   │   ├── Approach.tsx
 │   │   ├── pages/
-│   │   └── LandingPage.tsx
-│   │   └── ChatBot.tsx
+│   │       └── LandingPage.tsx
+│   │       └── ChatBot.tsx
 │   │   ├── Footer.tsx
 │   │   ├── HeroBanner.tsx
 │   │   ├── LandingPage.tsx # New landing page component
