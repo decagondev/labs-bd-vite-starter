@@ -1,3 +1,5 @@
+Sure, here's an updated version of the README with a section for setting up the API key:
+
 # 🚀 Vite + React + TypeScript BD Labs Starter
 
 ## 📋 Overview
@@ -30,7 +32,14 @@ npm install
 yarn install
 ```
 
-### 4. Start Development Server
+### 4. Set up Environment Variables
+1. Copy the `.env.sample` file to `.env`:
+   ```bash
+   cp .env.sample .env
+   ```
+2. Open the `.env` file and replace `YOUR_API_KEY_HERE` with your actual API key.
+
+### 5. Start Development Server
 ```bash
 # Using npm
 npm run dev
@@ -64,6 +73,7 @@ project-root/
 │   ├── App.tsx          # Main application component
 │   ├── index.css        # Global styles
 │   └── main.tsx         # React application entry point
+├── .env.sample          # Sample environment variables
 ├── .gitignore           # Git ignore file
 ├── index.html           # HTML entry point
 ├── package-lock.json    # Automatically generated dependency lock file
