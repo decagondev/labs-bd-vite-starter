@@ -6,7 +6,7 @@ import Team from '../Team'
 function LandingPage() {
 
   return (
-    <div>
+    <div className="w-full">
       <HeroBanner />
       <Approach />
       <Team />
