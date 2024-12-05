@@ -33,6 +33,11 @@ yarn install
 ```
 
 ### 4. Set up Environment Variables
+0. Get a Groq API Key
+  - set up a groq cloud account if you have not already got one at [Groq Cloud](https://groq.com/groqcloud/)
+  - go to the [dev console keys area](https://console.groq.com/keys)
+  - click the `Create API Key` button and chose a name for your key.
+  - copy your new key and then follow steps 1 and 2.
 1. Copy the `.env.sample` file to `.env`:
    ```bash
    cp .env.sample .env
