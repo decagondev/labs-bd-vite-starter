@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { DecaChat } from 'deca-chat';
+import Markdown from 'react-markdown'
 
 interface ChatMessage {
   role: 'user' | 'assistant' | 'system';
@@ -85,7 +86,9 @@ const ChatBot: React.FC<ChatbotProps> = ({
                 : 'bg-gray-100 text-left'
             }`}
           >
-            {msg.content}
+            <Markdown>
+              {msg.content}
+            </Markdown>
           </div>
         ))}
         {isLoading && (
