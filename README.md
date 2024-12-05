@@ -49,7 +49,6 @@ project-root/
 │   │   └── logo.svg
 │   ├── components/      # React components
 │   │   ├── Approach.tsx
-│   │   ├── ChatBot.tsx  # New chatbot component
 │   │   ├── pages/
 │   │   └── LandingPage.tsx
 │   │   └── ChatBot.tsx
