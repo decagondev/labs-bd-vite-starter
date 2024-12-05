@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, ReactElement } from 'react';
 import axios from 'axios';
 
 interface ImageResponse {
@@ -6,7 +6,7 @@ interface ImageResponse {
   url: string;
 }
 
-const RandomImage: React.FC = () => {
+const RandomImage = () : ReactElement => {
   const [imageSource, setImageSource] = useState<string | null>(null);
 
   const getRandomImage = async () => {

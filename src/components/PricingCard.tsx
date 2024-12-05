@@ -1,4 +1,4 @@
-import React from "react";
+import { ReactElement } from "react";
 
 export interface PricingCardProps {
   title: string;
@@ -8,13 +8,13 @@ export interface PricingCardProps {
   isPopular: boolean;
 }
 
-const PricingCard: React.FC<PricingCardProps> = ({
+const PricingCard = ({
   title,
   price,
   features,
   buttonText,
   isPopular,
-}) => {
+}: PricingCardProps) : ReactElement => {
   return (
     <div
       className={`p-8 bg-white shadow-lg rounded-lg ${
