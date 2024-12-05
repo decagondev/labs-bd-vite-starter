@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ReactElement } from 'react';
+import { useState, useEffect, ReactElement } from 'react';
 import { DecaChat } from 'deca-chat';
 import Markdown from 'react-markdown'
 
