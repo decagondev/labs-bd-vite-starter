@@ -50,6 +50,9 @@ project-root/
 │   ├── components/      # React components
 │   │   ├── Approach.tsx
 │   │   ├── ChatBot.tsx  # New chatbot component
+│   │   ├── pages/
+│   │   └── LandingPage.tsx
+│   │   └── ChatBot.tsx
 │   │   ├── Footer.tsx
 │   │   ├── HeroBanner.tsx
 │   │   ├── LandingPage.tsx # New landing page component
@@ -126,4 +129,4 @@ Distributed under the MIT License.
 - Update `package.json` with your project details
 - Modify `README.md` to reflect your specific project
 - Customize ESLint and TypeScript configurations as needed
-- Explore and build upon the `ChatBot` and `LandingPage` components in the `components` folder
+- Explore and build upon the `ChatBot` and `LandingPage` components in the `components/pages` folder
