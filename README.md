@@ -34,7 +34,7 @@ yarn install
 
 ### 4. Set up Environment Variables
 0. Get a Groq API Key
-  - Cet up a groq cloud account if you have not already got one at [Groq Cloud](https://groq.com/groqcloud/)
+  - Set up a groq cloud account if you have not already got one at [Groq Cloud](https://groq.com/groqcloud/)
   - Go to the [dev console keys area](https://console.groq.com/keys)
   - Click the `Create API Key` button and chose a name for your key.
   - Copy your new key
