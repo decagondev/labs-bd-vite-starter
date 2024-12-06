@@ -14,7 +14,7 @@ interface ChatbotProps {
 
 const ChatBot = ({ 
   apiKey = import.meta.env.VITE_API_KEY,
-  initialSystemMessage = 'You are a Labster the friendly helpful chat bot.'
+  initialSystemMessage = 'You are a DecaChat the friendly helpful chat bot.'
 } : ChatbotProps): ReactElement => {
   const [chat, setChat] = useState<DecaChat | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
