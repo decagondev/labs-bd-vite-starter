@@ -8,7 +8,8 @@ const NavBar = () => {
                     <span className="ml-2 text-2xl font-semibold text-gray-600">Starter</span>
                 </div>
                 <ul className="flex space-x-6 text-gray-800 font-medium ml-80 gap-8">
-                    <li><Link to="/" className="hover:text-green-600">Home</Link></li>
+                <li><Link to="/" className="hover:text-green-600">Home</Link></li>
+                <li><Link to="/game" className="hover:text-green-600">Let's Play a Game</Link></li>
                     <li><a href="#approach" className="hover:text-green-600">How do we do Labs?</a></li>
                     <li><a href="#team" className="hover:text-green-600">Meet the Team</a></li>
                     <li><a href="#price" className="hover:text-green-600">Pricing</a></li>

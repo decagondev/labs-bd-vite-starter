@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import ChatBot from './components/pages/ChatBot';
 import LandingPage from './components/pages/LandingPage';
 import Footer from './components/Footer';
+import DungeonCrawler from './components/pages/DungeonCrawler';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='' element={<Outlet />}>
           <Route index element={<LandingPage />} />
           <Route path='/chat' element={<ChatBot />} />
+          <Route path="/game" element={<DungeonCrawler />} />
         </Route>
       </Routes>
       <Footer />
