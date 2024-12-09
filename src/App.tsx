@@ -5,6 +5,7 @@ import ChatBot from './components/pages/ChatBot';
 import LandingPage from './components/pages/LandingPage';
 import Footer from './components/Footer';
 import DungeonCrawler from './components/pages/DungeonCrawler';
+import AudioChatBot from './components/pages/AudioChatBot';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route index element={<LandingPage />} />
           <Route path='/chat' element={<ChatBot />} />
           <Route path='/game' element={<DungeonCrawler />} />
+          <Route path='/speek' element={<AudioChatBot />} />
         </Route>
       </Routes>
       <Footer />

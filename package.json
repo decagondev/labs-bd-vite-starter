@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "deca-chat": "^1.0.6",
+    "mathjs": "^14.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1",

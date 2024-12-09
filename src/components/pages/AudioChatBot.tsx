@@ -1,6 +1,6 @@
 import { useState, useEffect, ReactElement } from 'react';
 import { DecaChat } from 'deca-chat';
-import Markdown from 'react-markdown'
+import Markdown from 'react-markdown';
 
 interface ChatMessage {
   role: 'user' | 'assistant' | 'system';
@@ -12,10 +12,10 @@ interface ChatbotProps {
   initialSystemMessage?: string;
 }
 
-const ChatBot = ({ 
+const AudioChatBot = ({ 
   apiKey = import.meta.env.VITE_API_KEY,
   initialSystemMessage = 'You are a DecaChat the friendly helpful chat bot.'
-} : ChatbotProps): ReactElement => {
+}: ChatbotProps): ReactElement => {
   const [chat, setChat] = useState<DecaChat | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputMessage, setInputMessage] = useState<string>('');
@@ -63,14 +63,28 @@ const ChatBot = ({
         role: 'assistant', 
         content: response 
       }]);
+
+      speakText(response);
     } catch (error) {
       console.error('Chat error:', error);
+      const errorMessage = 'Sorry, there was an error processing your message.';
       setMessages(prev => [...prev, { 
         role: 'assistant', 
-        content: 'Sorry, there was an error processing your message.' 
+        content: errorMessage 
       }]);
+      speakText(errorMessage);
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  const speakText = (text: string) => {
+    if ('speechSynthesis' in window) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      window.speechSynthesis.speak(utterance);
+    } else {
+      console.warn('Text-to-speech is not supported in this browser.');
     }
   };
 
@@ -123,4 +137,4 @@ const ChatBot = ({
   );
 };
 
-export default ChatBot;
+export default AudioChatBot;
