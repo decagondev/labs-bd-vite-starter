@@ -12,7 +12,7 @@ const NavBar = () => {
                 <div className="flex align-center justify-center">
 
                     <ul className="hidden md:hidden lg:flex space-x-1 md:space-x-8 text-gray-800 font-xs md:font-medium ml-2 gap-2 md:gap-2 mr-8 mt-2">
-                        <li><Link to="/speek" className="hover:text-green-600 hidden md:hidden lg:flex">Speak</Link></li>
+                        <li><Link to="/speak" className="hover:text-green-600 hidden md:hidden lg:flex">Speak</Link></li>
                         <li><Link to="/game" className="hover:text-green-600 flex">Game</Link></li>
                         <li><a href="#team" className="hover:text-green-600">Team</a></li>
                     </ul>

@@ -18,7 +18,7 @@ function App() {
           <Route index element={<LandingPage />} />
           <Route path='/chat' element={<ChatBot />} />
           <Route path='/game' element={<DungeonCrawler />} />
-          <Route path='/speek' element={<AudioChatBot />} />
+          <Route path='/speak' element={<AudioChatBot />} />
         </Route>
       </Routes>
       <Footer />
